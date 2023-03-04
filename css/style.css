@@ -222,7 +222,7 @@ h3 {
 
 @media screen and (max-width: 991.98px) {
   .wrapper {
-    width: 90%;
+    width: 88%;
   }
   
   .logo a {
@@ -288,7 +288,7 @@ h3 {
   }
   
   #contact .wrapper .footer .footer-section p {
-    font-size: 14px;
+    font-size: 10px;
   }
   
   h3 {
