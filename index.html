@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Sebingkai Narasi Home</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <nav>
+      <div class="wrapper">
+        <div class="logo"><a href="">Sebingkai Narasi</a></div>
+        <div class="menu">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#other">Other</a></li>
+            <li><a href="#tutors">Tutors</a></li>
+            <li><a href="#partners">Partners</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="" class="tbl-biru">sign up</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="wrapper">
+      <!-- untuk home -->
+      <section id="home">
+        <img src="img/gambar1.jpeg"/>
+        <div class="kolom">
+          <p class="deskripsi">Sebingkai Narasi Home #kegiatan</p>
+          <h2>Have Fun</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, consequatur?</p>
+          <p><a href="" class="tbl-pink">Selengkapnya</a></p>
+        </div>
+      </section>
+      
+      <!-- untuk other -->
+      <section id="other">
+        <div class="kolom">
+          <p class="deskripsi">Kegiatan Acara</p>
+          <h2>Acara Makan</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta expedita soluta ratione atque aut officia quos natus, aspernatur deserunt reprehenderit!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta expedita soluta ratione atque aut officia quos natus, aspernatur deserunt reprehenderit!</p>
+           <p><a href="" class="tbl-biru">Selengkapnya</a></p>
+        </div>
+        <img src="img/gambar2.jpeg"/>
+      </section>
+      
+      <!-- untuk tutors -->
+      <section id="tutors">
+        <div class="tengah">
+          <div class="kolom">
+            <p class="deskripsi">Our Top Tutors</p>
+            <h2>Tutors</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nostrum, fugit porro, ratione repellendus illo!</p>
+          </div>
+          <div class="kartu">
+            <div class="tutor-list">
+              <div class="kartu-tutor">
+                <img src="img/kartu1.png"/>
+                <p>Rona Liza</p>
+              </div>
+              <div class="kartu-tutor">
+                <img src="img/kartu2.jpeg"/>
+                <p>Sulis</p>
+              </div>
+              <div class="kartu-tutor">
+                <img src="img/kartu3.jpeg"/>
+                <p>Nugroh</p>
+              </div>
+              <div class="kartu-tutor">
+                <img src="img/kartu4.jpeg"/>
+                <p>Tyo Suga</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- partners -->
+      <section id="partners">
+        <div class="tengah">
+          <div class="kolom">
+            <p class="deskripsi">Our Top Partners</p>
+            <h2>Partners</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae nemo cum hic rem, aspernatur nihil corporis veritatis pariatur quos at.</p>
+          </div>
+          <div class="partner-list">
+            <div class="kartu-partner">
+              <img src="img/partner1.jpeg"/>
+              </div>
+            <div class="kartu-partner">
+              <img src="img/partner2.jpeg"/>
+              </div>
+            <div class="kartu-partner">
+              <img src="img/partner3.jpeg"/>
+              </div>
+            <div class="kartu-partner">
+              <img src="img/partner4.jpeg"/>
+              </div>
+            <div class="kartu-partner">
+              <img src="img/partner5.png"/>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+   
+   <!-- contact --> 
+    <div id="contact">
+      <div class="wrapper">
+        <div class="footer">
+          <div class="footer-section">
+            <h3>Home</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, perferendis.</p>
+           </div>
+          <div class="footer-section">
+            <h3>About</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, perferendis.</p>
+           </div>
+          <div class="footer-section">
+            <h3>Contact</h3>
+            <p>Semnu GunungKidul Yogyakarta</p>
+            <p>Kode Pos: 55893</p>
+           </div>
+          <div class="footer-section">
+            <h3>Social</h3>
+            <p><b>Instagram: </b>Tyo Suga</p>
+           </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- jam -->
+    <div id="root"></div>
+      <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+      <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+      <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+      <script type="text/babel">
+      const root = document.querySelector('#root');
+          
+          function tick() {
+          const element = (
+            <div>
+            <h3>Clock Now</h3>
+            <h3>{new Date().toLocaleTimeString()}</h3>
+            </div>
+            )
+          
+          ReactDOM.render(element, root);
+          }
+          
+          tick();
+          
+          setInterval(function () {
+            tick();
+          },1000);
+        </script>
+    
+    <!-- copyright -->
+    <div id="copyright">
+      <div class="wrapper">
+        &copy; 2023. <b>TyoSuga </b>All Rights Reserved.
+      </div>
+    </div>
+  </body>
+</html>
