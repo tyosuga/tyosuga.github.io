@@ -228,13 +228,15 @@ h3 {
   }
   
   .logo a {
-    display: block;
+    font-size: 30px;
+    font-weight: 100;
     width: 100%;
     text-align: center;
   }
   
   nav {
     width: 100%;
+    line-height: 30px;
   }
   
   nav .menu {
@@ -245,12 +247,23 @@ h3 {
   nav .menu ul {
     text-align: center;
     margin: auto;
-    line-height: 60px;
+    line-height: 30px;
   }
   
   nav .menu ul li {
     display: inline-block;
     float: none;
+  }
+  
+  nav .menu ul li a {
+    padding: 0px 5px 0px 5px;
+  }
+  
+  a.tbl-biru {
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 3px 2px 3px 2px;
+    font-weight: bold;
   }
   
   section {
