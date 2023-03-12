@@ -4,33 +4,37 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Sebingkai Narasi Home</title>
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- custom css -->
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <nav>
-      <div class="wrapper">
-        <div class="logo"><a href="">Sebingkai Narasi</a></div>
-        <div class="menu">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#other">Other</a></li>
-            <li><a href="#tutors">Tutors</a></li>
-            <li><a href="#partners">Partners</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="sign_up.html" class="tbl-biru">sign up</a></li>
-          </ul>
-        </div>
-      </div>
+    <!-- header design -->
+  <header class="header">
+    <a href="portfolio.html" class="logo">Sebingkai Narasi</a>
+    
+    <i class='bx bx-menu' id="menu-icon"></i>
+    
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#other">Other</a>
+      <a href="#tutors">Admin</a>
+      <a href="#partners">Partners</a>
+      <a href="#contact">Contact</a>
+      <a href="sign_up.html" class="btn">sign up</a></li>
     </nav>
+  </header>
     <div class="wrapper">
       <!-- untuk home -->
       <section id="home">
         <img src="img/gambar1.jpeg"/>
         <div class="kolom">
           <p class="deskripsi">Sebingkai Narasi Home #kegiatan</p>
-          <h2>Have Fun</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, consequatur?</p>
-          <p><a href="" class="tbl-pink">Selengkapnya</a></p>
+          <h2>Kegiatan <span class="multiple-text"></span></h2>
+          <p>Kegiatan bersenang-senang untuk membangkitkan semangat setelah lelah bekerja setiap hari</p>
+          <p><a href="have_fun.html" class="tbl-pink">Selengkapnya</a></p>
         </div>
       </section>
       
@@ -39,9 +43,9 @@
         <div class="kolom">
           <p class="deskripsi">Kegiatan Acara</p>
           <h2>Acara Makan</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta expedita soluta ratione atque aut officia quos natus, aspernatur deserunt reprehenderit!</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta expedita soluta ratione atque aut officia quos natus, aspernatur deserunt reprehenderit!</p>
-           <p><a href="" class="tbl-biru">Selengkapnya</a></p>
+          <p>Makan bersama jadi nikmat,ditemani dengan keluarga dan teman-teman untuk menikmati kebersamaan di sebuah tempat yang nyaman dan membahagiakan.</p>
+          <p>Acara ini bisa di selenggarakan kapanpun dimanapun ditempat yang sudah direncanakan dari agenda yang dibuat sebelum keberangkatan acara.</p>
+           <p><a href="acara.html" class="tbl-pink">Selengkapnya</a></p>
         </div>
         <img src="img/gambar2.jpeg"/>
       </section>
@@ -50,23 +54,23 @@
       <section id="tutors">
         <div class="tengah">
           <div class="kolom">
-            <p class="deskripsi">Our Top Tutors</p>
-            <h2>Tutors</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nostrum, fugit porro, ratione repellendus illo!</p>
+            <p class="deskripsi">Our Top Admin</p>
+            <h2>Admin</h2>
+            <p>Hubungi admin jika anda ingin ikut serta dalam acara kegiatan ini,dan akan ada pemberitahuan kegiatan lainya setelah anda masuk dalam grub ini.</p>
           </div>
           <div class="kartu">
             <div class="tutor-list">
               <div class="kartu-tutor">
                 <img src="img/kartu1.png"/>
-                <p>Rona Liza</p>
+                <p>Clara</p>
               </div>
               <div class="kartu-tutor">
                 <img src="img/kartu2.jpeg"/>
-                <p>Sulis</p>
+                <p>Arinda</p>
               </div>
               <div class="kartu-tutor">
                 <img src="img/kartu3.jpeg"/>
-                <p>Nugroh</p>
+                <p>Adam</p>
               </div>
               <div class="kartu-tutor">
                 <img src="img/kartu4.jpeg"/>
@@ -83,7 +87,7 @@
           <div class="kolom">
             <p class="deskripsi">Our Top Partners</p>
             <h2>Partners</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae nemo cum hic rem, aspernatur nihil corporis veritatis pariatur quos at.</p>
+            <p>Kegiatan ini di dukung oleh</p>
           </div>
           <div class="partner-list">
             <div class="kartu-partner">
@@ -112,11 +116,11 @@
         <div class="footer">
           <div class="footer-section">
             <h3>Home</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, perferendis.</p>
+            <p>Sebingkai Narasi menyengarakan kegiatan-kegiatan yang bersifat bersenang-senang</p>
            </div>
           <div class="footer-section">
             <h3>About</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, perferendis.</p>
+            <p>Tempat untuk berkumpulnya dan menyenggarakan kegiatan-kegiatan</p>
            </div>
           <div class="footer-section">
             <h3>Contact</h3>
@@ -163,5 +167,13 @@
         &copy; 2023. <b>TyoSuga </b>All Rights Reserved.
       </div>
     </div>
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+    <!-- custom js -->
+    <script src="js/script.js"></script>
   </body>
 </html>

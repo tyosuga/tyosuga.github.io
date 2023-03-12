@@ -6,10 +6,83 @@
   padding: 0px;
 }
 
+:root {
+  --bg-color: #1f242d;
+  --second-bg-color: #323946;
+  --text-color: #fff;
+  --main-color: #BE6DB7;
+}
+
 body {
   margin: 0px;
   padding: 0px;
   font-family: 'Lora',serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 97%;
+  padding: 1rem 30rem 1rem 1rem;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  overflow-x: none;
+  scroll-behavior: smooth;
+}
+
+.header.sticky {
+  border-bottom: .1rem solid rgba(0, 0, 0, .2);
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  font-weight: 600;
+  cursor: default;
+}
+
+.navbar a {
+  font-size: 1rem;
+  color: var(--text-color);
+  margin-left: 1rem;
+  transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: var(--main-color);
+}
+
+#menu-icon {
+  font-size: 2.6rem;
+  margin-right: 1rem;
+  color: var(--text-color);
+  display: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 1rem;
+  background: var(--main-color);
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem var(--main-color);
+  font-size: 1rem;
+  color: var(--second-bg-color);
+  letter-spacing: .1rem;
+  font-weight: 600;
+  transition: .5s ease;
+}
+
+.btn:hover {
+  box-shadow: none;
+}
+
+span {
+  color: var(--main-color);
 }
 
 .wrapper {
@@ -17,58 +90,12 @@ body {
   margin: auto;
   position: relative;
 }
-.logo a {
-  font-size: 50px;
-  font-weight: 800;
-  float: left;
-  font-family: Courier;
-  color: #364f6b;
-}
-
-.menu {
-  float: right;
-}
-
-nav {
-  width: 100%;
-  margin: auto;
-  display: flex;
-  line-height: 80px;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  background: #ffffff;
-  z-index: 1;
-  border-bottom: 1px solid #364f6b;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-nav ul li {
-  float: left;
-}
-
-nav ul li a {
-  color: black;
-  font-weight: bold;
-  text-align: center;
-  padding: 0px 18px 0px 18px;
-  text-decoration: none;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-}
 
 section {
   margin: auto;
   display: flex;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .kolom {
@@ -226,39 +253,7 @@ h3 {
   .wrapper {
     width: 88%;
   }
-  
-  .logo a {
-    font-size: 30px;
-    font-weight: 100;
-    width: 100%;
-    text-align: center;
-  }
-  
-  nav {
-    width: 100%;
-    line-height: 30px;
-  }
-  
-  nav .menu {
-    width: 100%;
-    margin: 0;
-  }
-  
-  nav .menu ul {
-    text-align: center;
-    margin: auto;
-    line-height: 30px;
-  }
-  
-  nav .menu ul li {
-    display: inline-block;
-    float: none;
-  }
-  
-  nav .menu ul li a {
-    padding: 0px 5px 0px 5px;
-  }
-  
+ 
   a.tbl-biru {
     border-radius: 15px;
     margin-top: 20px;
@@ -274,6 +269,7 @@ h3 {
     display: block;
     width: 100%;
     height: auto;
+    margin-top: 80px;
   }
   
   .tengah {
@@ -317,5 +313,38 @@ h3 {
   
   #root h3 {
     line-height: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block;
+  }
+  
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 80%;
+    padding: 1rem 2rem;
+    background: var(--bg-color);
+    border-top: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    display: none;
+  }
+  
+  .navbar.active {
+    display: block;
+  }
+  
+  .navbar a {
+    display: block;
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .btn {
+    display: block;
+    width: 40px;
   }
 }
