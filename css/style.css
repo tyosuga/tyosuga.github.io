@@ -96,8 +96,10 @@ span {
 section {
   margin: auto;
   display: flex;
-  margin-top: 50px;
-  margin-bottom: 10px;
+  min-height: 10vh;
+  /*margin-top: 30px;*/
+  /*margin-bottom: 10px;*/
+  padding: 10rem 2% 8rem;
 }
 
 .home-img img {
@@ -117,8 +119,8 @@ section {
 }
 
 .kolom {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  /*margin-top: 50px;*/
+  /*margin-bottom: 60px;*/
   margin-left: 20px;
 }
 
@@ -265,7 +267,7 @@ h3 {
     display: block;
     width: 100%;
     height: auto;
-    margin-top: 80px;
+    /*margin-top: 70px;*/
   }
   
   .tengah {
@@ -362,7 +364,7 @@ h3 {
   }
   
   .kolom {
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
   }
   
   #home .kolom h2 {
@@ -376,12 +378,12 @@ h3 {
   }
   
   .kartu-tutor img {
-    margin-top: 5px;
+    /*margin-top: 5px;*/
   }
   
   p {
     margin: 5px 0 5px 0;
-    padding: 6px 0 5px 0;
+    padding: 6px 0 6px 0;
   }
   
   .kartu-partner {
