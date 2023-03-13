@@ -4,6 +4,10 @@
   text-decoration: none;
   margin: 0px;
   padding: 0px;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  box-sizing: boder-box;
 }
 
 :root {
@@ -30,8 +34,6 @@ body {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-  overflow-x: none;
-  scroll-behavior: smooth;
 }
 
 .header.sticky {
@@ -58,7 +60,7 @@ body {
 }
 
 #menu-icon {
-  font-size: 2.6rem;
+  font-size: 1.6rem;
   margin-right: 1rem;
   color: var(--text-color);
   display: none;
@@ -94,14 +96,30 @@ span {
 section {
   margin: auto;
   display: flex;
-  margin-top: 20px;
+  margin-top: 50px;
   margin-bottom: 10px;
+}
+
+.home-img img {
+  animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2.4rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .kolom {
   margin-top: 50px;
   margin-bottom: 50px;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 .kolom .deskripsi {
@@ -119,21 +137,6 @@ h2 {
   color: #364f6b;
   width: 100%;
   line-height: 50px;
-}
-
-a.tbl-biru {
-  background: #BE6DB7;
-  border-radius: 20px;
-  margin-top: 20px;
-  padding: 15px 20px 15px 20px;
-  color: #ffffff;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-a.tbl-biru:hover {
-  background: #FFED00;
-  text-decoration: none;
 }
 
 a.tbl-pink {
@@ -208,6 +211,10 @@ p {
   padding: 50px 0px 50px 0px;
   width: 100%;
 }
+ 
+ #contact .wrapper .footer .footer-section p {
+    margin: 0px 20px 20px 20px;
+  }
 
 .footer {
   width: 100%;
@@ -232,10 +239,6 @@ h3 {
   line-height: 50px;
 }
 
- #contact .wrapper .footer .footer-section p {
-    margin: 0px 20px 20px 20px;
-  }
-
 #copyright {
   text-align: center;
   width: 100%;
@@ -252,13 +255,6 @@ h3 {
 @media screen and (max-width: 991.98px) {
   .wrapper {
     width: 88%;
-  }
- 
-  a.tbl-biru {
-    border-radius: 15px;
-    margin-top: 20px;
-    padding: 3px 2px 3px 2px;
-    font-weight: bold;
   }
   
   section {
@@ -316,16 +312,26 @@ h3 {
   }
 }
 
+@media (max-width: 991px) {
+  .header {
+    padding: 3px 8px;
+  }
+}
+
 @media (max-width: 768px) {
   #menu-icon {
     display: block;
+  }
+  
+  .logo {
+   font-size: 1rem;
   }
   
   .navbar {
     position: absolute;
     top: 100%;
     left: 0;
-    width: 80%;
+    width: 100%;
     padding: 1rem 2rem;
     background: var(--bg-color);
     border-top: .1rem solid rgba(0, 0, 0, .2);
@@ -346,5 +352,53 @@ h3 {
   .btn {
     display: block;
     width: 40px;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 70%;
+    overflow-x: hidden;
+  }
+  
+  .kolom {
+    margin-bottom: 20px;
+  }
+  
+  #home .kolom h2 {
+    font-size: 15px;
+    margin-bottom: 2px;
+  }
+  
+  #other .kolom h2 {
+    margin-bottom: 5px;
+    font-size: 25px;
+  }
+  
+  .kartu-tutor img {
+    margin-top: 5px;
+  }
+  
+  p {
+    margin: 5px 0 5px 0;
+    padding: 6px 0 5px 0;
+  }
+  
+  .kartu-partner {
+    width: 15%;
+    margin: 1px auto;
+  }
+  
+  #contact {
+    margin-bottom: 2px;
+  }
+  
+  #root {
+    margin-top: 2px;
+  }
+  
+  #copyright {
+    padding: 2rem 0;
+    flex-direction: column-reverse;
   }
 }
