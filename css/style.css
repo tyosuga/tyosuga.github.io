@@ -248,14 +248,14 @@ h3 {
 #copyright {
   text-align: center;
   width: 100%;
-  padding: 50px 0px 50px 0px;
-  margin-top: 50px;
+  padding: 10px 0px 5px 0px;
+  margin-top: 10px;
 }
 #root {
   text-align: center;
   width: 96%;
-  padding: 50px 0px 50px 0px;
-  margin-top: 50px;
+  padding: 10px 0px 5px 0px;
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 991.98px) {
@@ -318,7 +318,7 @@ h3 {
   }
   
   #root h3 {
-    line-height: 5px;
+    line-height: 2px;
   }
 }
 
@@ -390,8 +390,8 @@ h3 {
   }
   
   p {
-    margin: 5px 0 5px 0;
-    padding: 6px 0 6px 0;
+    margin: 5px 0px 5px 0;
+    padding: 6px 0px 6px 0;
   }
   
   .kartu-partner {
