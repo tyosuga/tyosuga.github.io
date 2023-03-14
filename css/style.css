@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
   text-decoration: none;
@@ -20,7 +20,7 @@
 body {
   margin: 0px;
   padding: 0px;
-  font-family: 'Lora',serif;
+  font-family: 'Poppins',montserrat;
   background: var(--bg-color);
 }
 
@@ -85,7 +85,7 @@ body {
 }
 
 span {
-  color: var(--main-color);
+  color: #FFED00;
 }
 
 .wrapper {
@@ -132,12 +132,12 @@ section {
 .kolom .deskripsi {
   font-size: 20px;
   font-weight: bold;
-  font-family: 'comic sans ms';
+  /*font-family: 'comic sans ms';*/
   color: var(--text-color);
 }
 
 h2 {
-  font-family: 'comic sans ms';
+  /*font-family: 'comic sans ms';*/
   font-weight: 800;
   font-size: 45px;
   margin-bottom: 5px;
@@ -190,7 +190,7 @@ p {
 }
 
 .kartu-tutor p {
-  font-family: 'Comic Sans MS';
+  /*font-family: 'Comic Sans MS';*/
   font-weight: 800;
   font-size: 25px;
   text-align: center;
@@ -235,7 +235,7 @@ p {
 }
 
 h3 {
-  font-family: 'comic sans ms';
+  /*font-family: 'comic sans ms';*/
   font-weight: 800;
   font-size: 40px;
   margin: 0 20px 10px 20px ;
