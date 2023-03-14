@@ -11,10 +11,10 @@
 }
 
 :root {
-  --bg-color: #1f242d;
+  --bg-color: #1F8A70;
   --second-bg-color: #323946;
   --text-color: #fff;
-  --main-color: #BE6DB7;
+  --main-color: #FF8B13;
 }
 
 body {
@@ -139,7 +139,7 @@ h2 {
   font-family: 'comic sans ms';
   font-weight: 800;
   font-size: 45px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   color: #364f6b;
   width: 100%;
   line-height: 50px;
@@ -162,7 +162,7 @@ a.tbl-pink:hover {
 
 p {
   margin: 10px 0px 10px 0px;
-  padding: 10px 0px 10px 0px;
+  padding: 3px 0px 10px 0px;
 }
 
 .tengah {
@@ -231,15 +231,16 @@ p {
 }
 
 .footer-section {
+  flex: 1 1 10rem;
   width: 20%;
-  margin: 0 auto;
+  margin: 0 40px;
 }
 
 h3 {
   font-family: 'comic sans ms';
   font-weight: 800;
   font-size: 40px;
-  margin: 0px 20px 20px 20px ;
+  margin: 0 20px 10px 20px ;
   color: #364f6b;
   width: 100%;
   line-height: 50px;
@@ -304,6 +305,11 @@ h3 {
     width: 50%;
   }
   
+  .footer-section {
+    flex: 1 1 3rem;
+    margin: 0 1rem;
+  }
+  
   #contact .wrapper .footer .footer-section p {
     font-size: 10px;
   }
@@ -318,7 +324,7 @@ h3 {
   }
   
   #root h3 {
-    line-height: 2px;
+    line-height: 8px;
   }
 }
 
@@ -361,7 +367,8 @@ h3 {
   
   .btn {
     display: block;
-    width: 40px;
+    width: 50px;
+    text-align: center;
   }
 }
 
@@ -389,9 +396,13 @@ h3 {
     /*margin-top: 5px;*/
   }
   
+  h2 {
+    font-size: 3rem;
+  }
+  
   p {
-    margin: 5px 0px 5px 0;
-    padding: 6px 0px 6px 0;
+    margin: 5px 0 5px 0;
+    padding: 6px 0 6px 0;
   }
   
   .kartu-partner {
@@ -400,7 +411,11 @@ h3 {
   }
   
   #contact {
-    margin-bottom: 2px;
+    /*margin-bottom: 2px;*/
+  }
+  
+  .footer-section p {
+    font-size: 1rem;
   }
   
   #root {

@@ -37,15 +37,17 @@ nav {
   background: #FFD4B2;
   z-index: 1;
   border-bottom: 1px solid #364f6b;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo a {
   font-size: 50px;
   font-weight: 800;
-  float: left;
+  /*float: left;*/
   font-family: Courier;
   color: #364f6b;
-  margin-left: 10px;
+  /*margin-left: 10px;*/
   text-decoration: none;
 }
 
@@ -64,7 +66,7 @@ nav {
     font-weight: 100;
     width: 100%;
     text-align: center;
-    margin-left: 10px;
+    /*margin-left: 10px;*/
   }
 }
 
